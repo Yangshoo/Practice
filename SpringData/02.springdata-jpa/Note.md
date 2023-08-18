@@ -68,4 +68,10 @@ public interface CrudRepository<T, ID> extends Repository<T, ID> {
 
 4.通过Specifications
 
+    Query by Example只支持对字符串进行条件设置，Specification可以支持所有类型
+
 5.通过Querydsl
+
+    QueryDSL是基于ORM框架或SQL平台上的一个通用查询框架。借助QueryDSL可以在任何支持的ORM框架或SQL平台上以通用API方式构建查询
+    JPA是QueryDSL的主要集成技术，是JPQL和Criteria查询的代替方法。目前QueryDSL支持的平台包括JPA,JDP,SQL,Mongodb等
+    Querydsl扩展能让我们以链式方式代码编写查询方法。该扩展需要一个接口QueryDslPredicateExecutor,它定义了很多查询方法。
